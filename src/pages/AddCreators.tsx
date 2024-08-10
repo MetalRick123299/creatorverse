@@ -1,8 +1,11 @@
 import { FormEventHandler } from "react";
 import { supabase } from "../utils/client";
 import { CreatorInsert } from "../utils/types";
+import { useNavigate } from "react-router-dom";
 
 function AddCreators() {
+  const navigate = useNavigate();
+
   const AddCreator = async (creator: CreatorInsert) => {
     const createdCreator = await supabase.from("creators").insert(creator);
 
@@ -31,6 +34,8 @@ function AddCreators() {
       description,
       imageURL,
     });
+
+    navigate("/");
   };
 
   return (
