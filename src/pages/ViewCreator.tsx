@@ -30,8 +30,7 @@ function ViewCreator() {
   if (creator === null) return <p>Not Found</p>;
 
   return (
-    <div>
-      <h1>ViewCreator</h1>
+    <div className="grid h-screen place-items-center">
       <Card creator={creator} />
     </div>
   );
