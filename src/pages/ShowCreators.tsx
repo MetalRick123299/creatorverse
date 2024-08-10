@@ -21,14 +21,21 @@ function ShowCreators() {
   }, []);
 
   return (
-    <div>
-      <h1>ShowCreators</h1>
-      <a href="/add">Add Creator</a>
-      {creators.length > 0 ? (
-        creators.map((creator) => <Card key={creator.id} creator={creator} />)
-      ) : (
-        <p>No creators found</p>
-      )}
+    <div className="flex w-full flex-col p-8">
+      <div className="flex flex-col items-center gap-y-4">
+        <h1 className="text-7xl">Creatorverse</h1>
+        <a href="/add" className="cursor-pointer text-2xl">
+          Add Creator
+        </a>
+      </div>
+
+      <div className="flex flex-wrap justify-center gap-8">
+        {creators.length > 0 ? (
+          creators.map((creator) => <Card key={creator.id} creator={creator} />)
+        ) : (
+          <p>No creators found</p>
+        )}
+      </div>
     </div>
   );
 }
