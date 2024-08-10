@@ -1,5 +1,5 @@
 import { ChangeEvent, FormEventHandler, useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import { Creator, CreatorUpdate } from "../utils/types";
 import { supabase } from "../utils/client";
 import Card from "../components/Card";
@@ -9,6 +9,7 @@ function EditCreators() {
   const id = parseInt(stringID!);
 
   const [creator, setCreator] = useState<Creator | null>(null);
+  const navigate = useNavigate();
 
   useEffect(() => {
     (async () => {
@@ -24,6 +25,22 @@ function EditCreators() {
       setCreator(creator.data[0]);
     })();
   }, [id]);
+
+  const DeleteCreator = async (id: number) => {
+    const deletedCreator = await supabase
+      .from("creators")
+      .delete()
+      .eq("id", id);
+
+    if (deletedCreator.error) {
+      console.error("Error");
+      return;
+    }
+
+    console.log("Creator deleted", deletedCreator.data);
+
+    navigate("/");
+  };
 
   const UpdateCreator = async (creator: CreatorUpdate) => {
     const updatedCreator = await supabase
@@ -124,6 +141,9 @@ function EditCreators() {
           />
         </label>
 
+        <button type="button" onClick={() => DeleteCreator(creator.id)}>
+          Delete Creator
+        </button>
         <button type="submit">Add Creator</button>
       </form>
 
