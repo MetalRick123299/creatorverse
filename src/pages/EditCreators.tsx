@@ -53,11 +53,12 @@ function EditCreators() {
       return;
     }
 
+    navigate("/");
     console.log("Creator updated", updatedCreator.data);
   };
 
   const onChange = (
-    event: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+    event: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
   ) => {
     const { name, value } = event.target;
 
@@ -91,10 +92,12 @@ function EditCreators() {
   if (creator === null) return <p>Not Found</p>;
 
   return (
-    <div>
-      <h1>EditCreator</h1>
-      <form onSubmit={onSubmit}>
-        <label>
+    <div className="grid place-items-center gap-16 p-8 text-xl">
+      <form
+        onSubmit={onSubmit}
+        className="flex w-full max-w-2xl flex-col gap-4"
+      >
+        <label className="flex flex-col">
           <span>Creator Name:</span>
           <input
             type="text"
@@ -105,8 +108,7 @@ function EditCreators() {
             value={creator.name}
           />
         </label>
-
-        <label>
+        <label className="flex flex-col">
           <span>Creator URL:</span>
           <input
             type="text"
@@ -117,8 +119,7 @@ function EditCreators() {
             value={creator.url}
           />
         </label>
-
-        <label>
+        <label className="flex flex-col">
           <span>Creator Description:</span>
           <textarea
             name="description"
@@ -128,8 +129,7 @@ function EditCreators() {
             value={creator.description}
           ></textarea>
         </label>
-
-        <label>
+        <label className="flex flex-col">
           <span>Creator Image URL:</span>
           <input
             type="text"
@@ -141,10 +141,12 @@ function EditCreators() {
           />
         </label>
 
-        <button type="button" onClick={() => DeleteCreator(creator.id)}>
-          Delete Creator
-        </button>
-        <button type="submit">Add Creator</button>
+        <div className="flex justify-evenly">
+          <button type="submit">Save Changes</button>
+          <button type="button" onClick={() => DeleteCreator(creator.id)}>
+            Delete Creator
+          </button>
+        </div>
       </form>
 
       <Card creator={creator} />
