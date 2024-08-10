@@ -34,33 +34,34 @@ function AddCreators() {
   };
 
   return (
-    <form onSubmit={onSubmit}>
-      <label>
-        <span>Creator Name:</span>
-        <input type="text" name="name" placeholder="Name" required />
-      </label>
-
-      <label>
-        <span>Creator URL:</span>
-        <input type="text" name="url" placeholder="URL" required />
-      </label>
-
-      <label>
-        <span>Creator Description:</span>
-        <textarea
-          name="description"
-          placeholder="Description"
-          required
-        ></textarea>
-      </label>
-
-      <label>
-        <span>Creator Image URL:</span>
-        <input type="text" name="imageURL" placeholder="Image URL" required />
-      </label>
-
-      <button type="submit">Add Creator</button>
-    </form>
+    <div className="grid place-items-center p-8 text-xl">
+      <form
+        onSubmit={onSubmit}
+        className="flex w-full max-w-2xl flex-col gap-4"
+      >
+        <label className="flex flex-col">
+          <span>Creator Name:</span>
+          <input type="text" name="name" placeholder="Name" required />
+        </label>
+        <label className="flex flex-col">
+          <span>Creator URL:</span>
+          <input type="text" name="url" placeholder="URL" required />
+        </label>
+        <label className="flex flex-col">
+          <span>Creator Description:</span>
+          <textarea
+            name="description"
+            placeholder="Description"
+            required
+          ></textarea>
+        </label>
+        <label className="flex flex-col">
+          <span>Creator Image URL:</span>
+          <input type="text" name="imageURL" placeholder="Image URL" required />
+        </label>
+        <button type="submit">Add Creator</button>
+      </form>
+    </div>
   );
 }
 

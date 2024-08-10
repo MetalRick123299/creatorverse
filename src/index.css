@@ -8,5 +8,5 @@ body {
 
 input,
 textarea {
-  @apply bg-slate-200 text-slate-800 dark:bg-slate-700 dark:text-slate-100;
+  @apply rounded-lg bg-slate-200 py-2 pl-2 text-slate-800 dark:bg-slate-700 dark:text-slate-100;
 }
