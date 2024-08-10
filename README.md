@@ -36,7 +36,8 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented required features:
 
-👉🏿<img src='./GIF.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+👉🏿[Walkthrough.webm](https://github.com/user-attachments/assets/ae5a7307-c757-47c9-8749-85272d031681)
+
 
 <!-- Recommended tools:
 [Kap](https://getkap.co/) for macOS
@@ -45,7 +46,8 @@ Here's a walkthrough of implemented required features:
 
 ## Notes
 
-[Link to Website](https://creatorverse-ktloahpw6-metalrick123299s-projects.vercel.app)
+- [Link to Website](https://creatorverse-ktloahpw6-metalrick123299s-projects.vercel.app)
+- Uploaded a webm instead of a GIF as the GIF exceeded 100mbs
 
 ## License
 
