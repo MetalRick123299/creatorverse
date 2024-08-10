@@ -2,7 +2,7 @@
 
 Submitted by: \*_👉🏿 Richard Rodriguez_
 
-About this web app: **👉🏿 app description here**
+About this web app: **👉🏿 A website used to view & add different creators**
 
 Time spent: **👉🏿 5** hours
 
@@ -36,11 +36,7 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented required features:
 
-👉🏿<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
-
-<!-- Replace this with whatever GIF tool you used! -->
-
-GIF created with ... 👉🏿 GIF tool here
+👉🏿<img src='./GIF.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 <!-- Recommended tools:
 [Kap](https://getkap.co/) for macOS
@@ -49,11 +45,11 @@ GIF created with ... 👉🏿 GIF tool here
 
 ## Notes
 
-Describe any challenges encountered while building the app or any additional context you'd like to add.
+[Link to Website](https://creatorverse-ktloahpw6-metalrick123299s-projects.vercel.app)
 
 ## License
 
-Copyright [👉🏿 yyyy] [👉🏿 name of copyright owner]
+Copyright [👉🏿 2024] [👉🏿 Richard Rodriguez]
 
 Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at
 
