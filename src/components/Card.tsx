@@ -8,7 +8,7 @@ function Card({ creator }: { creator: Creator }) {
       <img src={imageURL} alt={name} />
       <p>Description: {description}</p>
       <a href={url}>Social Media Link</a>
-      <a href={id.toString()}>View Creator</a>
+      <a href={"/" + id.toString()}>View Creator</a>
       <a href={`/${id.toString()}/edit`}>Edit Creator</a>
     </div>
   );
