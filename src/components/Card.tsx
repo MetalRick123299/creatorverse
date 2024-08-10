@@ -1,13 +1,14 @@
 import { Creator } from "../utils/types";
 
 function Card({ creator }: { creator: Creator }) {
-  const { name, description, imageURL, url } = creator;
+  const { name, description, imageURL, url, id } = creator;
   return (
     <div>
-      <h3>{name}</h3>
+      <h3>Name: {name}</h3>
       <img src={imageURL} alt={name} />
-      <p>{description}</p>
-      <a href={url}>Link</a>
+      <p>Description: {description}</p>
+      <a href={url}>Social Media Link</a>
+      <a href={id.toString()}>View Creator</a>
     </div>
   );
 }

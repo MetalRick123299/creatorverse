@@ -23,8 +23,9 @@ function ShowCreators() {
   return (
     <div>
       <h1>ShowCreators</h1>
+      <a href="/add">Add Creator</a>
       {creators.length > 0 ? (
-        creators.map((creator) => <Card creator={creator} />)
+        creators.map((creator) => <Card key={creator.id} creator={creator} />)
       ) : (
         <p>No creators found</p>
       )}
