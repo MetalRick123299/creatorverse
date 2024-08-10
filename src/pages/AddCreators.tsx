@@ -26,8 +26,6 @@ function AddCreators() {
       ...formData,
     ]) as unknown as CreatorInsert;
 
-    // TODO: Add creator vaildation
-
     AddCreator({
       name,
       url,

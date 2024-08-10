@@ -76,8 +76,6 @@ function EditCreators() {
 
     if (creator === null) return;
 
-    // TODO: Add creator vaildation
-
     UpdateCreator(creator)
       .then(() => {
         console.log("Updated");
