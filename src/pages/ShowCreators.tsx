@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { supabase } from "../utils/client";
 import Card from "../components/Card";
 import { Creator } from "../utils/types";
+import { Link } from "react-router-dom";
 
 function ShowCreators() {
   const [creators, setCreators] = useState<Creator[]>([]);
@@ -24,9 +25,9 @@ function ShowCreators() {
     <div className="flex w-full flex-col p-8">
       <div className="flex flex-col items-center gap-y-4">
         <h1 className="text-7xl">Creatorverse</h1>
-        <a href="/add" className="cursor-pointer text-2xl">
+        <Link to="/add" className="cursor-pointer text-2xl">
           Add Creator
-        </a>
+        </Link>
       </div>
 
       <div className="flex flex-wrap justify-center gap-8">
