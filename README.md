@@ -36,8 +36,7 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented required features:
 
-👉🏿[Walkthrough](http://i.imgur.com/a/L5EkBnu)
-
+👉🏿![Imgur Image](http://i.imgur.com/F6YZY7Z.gif)
 
 <!-- Recommended tools:
 [Kap](https://getkap.co/) for macOS
