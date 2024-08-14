@@ -36,7 +36,9 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented required features:
 
-👉🏿![Imgur Image](http://i.imgur.com/F6YZY7Z.gif)
+👉🏿 Walkthrough
+
+https://github.com/user-attachments/assets/a57b0409-cf47-462d-a68f-d4cb4f2c14f6
 
 <!-- Recommended tools:
 [Kap](https://getkap.co/) for macOS
@@ -46,6 +48,7 @@ Here's a walkthrough of implemented required features:
 ## Notes
 
 - [Link to Website](https://creatorverse-ktloahpw6-metalrick123299s-projects.vercel.app)
+
 
 ## License
 
